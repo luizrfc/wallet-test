@@ -6,6 +6,8 @@ import { ConfigProvider } from "../context/configContext";
 import HomeScreen from "../screens/Home/HomeContent";
 import CreditCardsScreen from "../screens/CreditCards/CreditCardsScreen";
 import RegisterCardsScreen from "../screens/RegisterCards/RegisterCardsScreen";
+import NavigationHeader from "./navigationHeader";
+import { Loading } from "../components";
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
@@ -15,6 +17,12 @@ function Navigation() {
             <NavigationContainer>
                 <Navigator
                     initialRouteName="Home"
+                    screenOptions={{
+                        animation: "fade",
+                        header: ({ route, options }) => (
+                            <NavigationHeader route={route} title={options.title} />
+                        )
+                    }}
                 >
                     <Screen
                         name="Home"
@@ -24,7 +32,7 @@ function Navigation() {
                     <Screen
                         name="RegisterCards"
                         component={RegisterCardsScreen}
-                        options={{ headerShown: false }}
+                        options={{ title: "Cadastro", headerTransparent: true }}
                     />
                     <Screen
                         name="CreditCards"
