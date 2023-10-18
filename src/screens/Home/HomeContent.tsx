@@ -1,40 +1,45 @@
-import React from 'react';
-import { View } from 'react-native';
-import { styleTheme } from '../../styles/themeStyle';
-import { Box, Button, Container, Text } from '../../components';
+import React, { Fragment, useContext } from 'react';
+
+import { Box, Button, Container, ImageSvg, Loading, Text } from '../../components';
 import { NavigationProp, useNavigation } from '@react-navigation/native';
 import { RootStackParamList } from '../../navigation/navigationStackParams';
+import useHome from './HomeHooks';
+import { ConfigContext, ConfigProvider } from '../../context/configContext';
+import { View } from 'react-native';
+import { styleScreen } from '../../styles/themeStyle';
 
 const HomeScreen = (): JSX.Element => {
-    const navigation = useNavigation<NavigationProp<RootStackParamList>>();
+    const { handleLoadingCreditCards, handleBtnRegister } = useHome();
+    const configContext = useContext(ConfigContext);
 
-    const handleLoadingCreditCards = () => {
-        setTimeout(() => {
-            navigation.navigate("CreditCards");
-        }, 2000);
-    };
-
-    const handleBtnRegister = () => {
-        navigation.navigate("RegisterCards");
-    };
-
-    return <Container>
-        <Text text="Wallet Test" type="h1" weight="regular" />
-        <Box>
-            <Button
-                text="Meus cartões"
-                type="secondary"
-                handleClick={() => handleLoadingCreditCards()}
-                />
-        </Box>
-        <Box>
-            <Button
-                text="Cadastrar cartão"
-                type="primary"
-                handleClick={() => handleBtnRegister()}
-            />
-        </Box>
-    </Container>
+    return (
+        <Container>
+            <Loading />
+            {configContext?.loading ? (
+                <View style={[styleScreen.alignCenter]}>
+                    <ImageSvg image="wallet" width={50} height={50} />
+                </View>
+            ) : (
+                <Fragment>
+                    <Text text="Wallet Test" type="h1" weight="regular" />
+                    <Box>
+                        <Button
+                            text="Meus cartões"
+                            type="secondary"
+                            handleClick={() => handleLoadingCreditCards()}
+                        />
+                    </Box>
+                    <Box>
+                        <Button
+                            text="Cadastrar cartão"
+                            type="primary"
+                            handleClick={() => handleBtnRegister()}
+                        />
+                    </Box>
+                </Fragment>
+            )}
+        </Container>
+    )
 }
 
 export default HomeScreen;

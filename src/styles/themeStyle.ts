@@ -35,4 +35,48 @@ const styleTheme = (ph: number = 0) =>
         }
     });
 
-export { Colors, styleTheme };
+const styleScreen = StyleSheet.create({
+    screen: {
+        flex: 1,
+        backgroundColor: Colors.blueDark,
+        width: "100%",
+        position: "relative",
+        alignItems: "center",
+        justifyContent: "center"
+    },
+    alignCenter: {
+        width: "100%",
+        alignItems: "center"
+    },
+    title: {
+        marginBottom: 20
+    },
+    backTop: {
+        position: "absolute",
+        width: 350,
+        height: 235,
+        flexShrink: 0,
+        backgroundColor: Colors.white,
+        borderBottomLeftRadius: 50,
+        borderBottomRightRadius: 50,
+        opacity: 0.2,
+        transform: [{ rotate: "-30deg" }],
+        top: -120,
+        left: -110
+    },
+    backBottom: {
+        position: "absolute",
+        width: 350,
+        height: 235,
+        flexShrink: 0,
+        backgroundColor: Colors.white,
+        borderBottomLeftRadius: 50,
+        borderBottomRightRadius: 50,
+        opacity: 0.2,
+        transform: [{ rotate: "150deg" }],
+        bottom: -120,
+        right: -110
+    }
+});
+
+export { Colors, styleTheme, styleScreen };
