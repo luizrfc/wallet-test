@@ -1,7 +1,14 @@
 import ImageSvg from './ImageSvg';
-import Text from './Text';
+import Text from './TextComponent';
+import Button from './Button/ButtonComponent';
+
+import Box from './Containers/Box';
+import Container from './Containers/Container';
 
 export {
     ImageSvg,
-    Text
+    Text,
+    Box,
+    Button,
+    Container
 }

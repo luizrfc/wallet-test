@@ -8,7 +8,7 @@ import {
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
 import { Colors, styleTheme } from "./styles/themeStyle";
-import Navigation from './navigation';
+import Navigation from './navigation/navigation';
 
 function App(): JSX.Element {
 
