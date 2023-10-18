@@ -1,10 +1,11 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import { styleTheme } from '../../styles/themeStyle';
+import { Text } from '../../components';
 
 const HomeScreen = (): JSX.Element => {
     return <View style={styleTheme(16).main}>
-        <Text style={{ color: 'white' }}>Wallet Test</Text>
+        <Text text="Wallet Test" type="h1" weight="regular" />
     </View>
 }
 
