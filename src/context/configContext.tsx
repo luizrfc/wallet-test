@@ -30,8 +30,8 @@ interface IConfigProps {
 
 const ConfigContext = createContext<IConfigContextType | null>(null);
 
-const defaultPosition = -120;
-const animatedPosition = -80;
+const defaultPosition = -100;
+const animatedPosition = -100;
 const defaultWidth = 350;
 const animatedWidth = 450;
 const defaultHeight = 235;

@@ -61,8 +61,7 @@ const styleScreen = StyleSheet.create({
         borderBottomRightRadius: 50,
         opacity: 0.2,
         transform: [{ rotate: "-30deg" }],
-        top: -120,
-        left: -110
+        left: -80
     },
     backBottom: {
         position: "absolute",
@@ -74,8 +73,7 @@ const styleScreen = StyleSheet.create({
         borderBottomRightRadius: 50,
         opacity: 0.2,
         transform: [{ rotate: "150deg" }],
-        bottom: -120,
-        right: -110
+        right: -80
     }
 });
 

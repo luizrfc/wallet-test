@@ -4,13 +4,13 @@ import { View } from 'react-native';
 import InputLabel from './InputLabel';
 import { stylesInput } from './inputsStyle';
 import InputIcon from './InputIcon';
-import { Control, Controller } from 'react-hook-form';
+import { ControllerRenderProps } from 'react-hook-form';
 import InputText from './InputText';
 import InputMask from './InputMask';
 
 type MasksList = "date" | "credit_card" | "cpf";
 interface InputsProps {
-    field: any;
+    field: ControllerRenderProps<any, any>;
     label?: string;
     name: string;
     mask?: MasksList;
