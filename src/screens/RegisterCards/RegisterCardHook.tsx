@@ -4,6 +4,8 @@ import { registerCardFormSchema } from './registerCardFormSchema';
 interface IFormRegisterCard {
     number_card: string;
     name: string;
+    expiry: string;
+    cvv: string;
 }
 
 export interface IRegisterCard {
@@ -25,7 +27,9 @@ const useRegisterCard = (): IRegisterCard => {
         mode: 'all',
         defaultValues: {
             number_card: '',
-            name: ''
+            name: '',
+            expiry: '',
+            cvv: '',
         }
     });
 

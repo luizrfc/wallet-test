@@ -34,6 +34,10 @@ const stylesInput = StyleSheet.create({
     borderWidth: 1,
     borderColor: Colors.error,
     backgroundColor: Colors.errorBackground
+  },
+  helperText: {
+    paddingHorizontal: 4,
+    paddingVertical: 2
   }
 });
 

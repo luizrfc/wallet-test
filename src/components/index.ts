@@ -7,6 +7,7 @@ import Loading from './Loading';
 
 import Box from './Containers/Box';
 import Container from './Containers/Container';
+import Item from './Containers/item';
 
 export {
     ImageSvg,
@@ -15,5 +16,6 @@ export {
     Button,
     Input,
     Container,
-    Loading
+    Loading,
+    Item
 }
