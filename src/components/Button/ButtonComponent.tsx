@@ -4,7 +4,7 @@ import { Text, ImageSvg } from "..";
 import { stylesBase, stylesButton } from "./buttonStyle";
 import { Colors } from "../../styles/themeStyle";
 
-type IconsList = "add" | "back" | "wallet" | "camera";
+export type IconsList = "add" | "back" | "wallet" | "camera";
 type TypesList = "primary" | "secondary" | "disabled" | "icon" | "rounded";
 
 interface IButtons {

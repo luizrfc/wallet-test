@@ -1,6 +1,7 @@
 import ImageSvg from './ImageSvg';
 import Text from './TextComponent';
 import Button from './Button/ButtonComponent';
+import Input from './Inputs/InputComponent';
 
 import Loading from './Loading';
 
@@ -12,6 +13,7 @@ export {
     Text,
     Box,
     Button,
+    Input,
     Container,
     Loading
 }
