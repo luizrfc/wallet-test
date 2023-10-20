@@ -7,7 +7,7 @@ import Loading from './Loading';
 
 import Box from './Containers/Box';
 import Container from './Containers/Container';
-import Item from './Containers/item';
+import Item from './Containers/Item';
 
 export {
     ImageSvg,
