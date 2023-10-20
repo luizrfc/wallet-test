@@ -21,6 +21,14 @@ const NavigationHeader = ({ route, title }: IHeader) => {
     const navigation = useNavigation<NavigationProp<RootStackParamList>>();
     const configContext = useContext(ConfigContext);
 
+    function handleLoadingCreditCards() {
+        configContext?.toggleLoading(true);
+        setTimeout(() => {
+            navigation.navigate("CreditCards");
+            configContext?.toggleLoading(false);
+        }, 2000);
+    }
+
     return (
         <View
             style={[
@@ -40,11 +48,19 @@ const NavigationHeader = ({ route, title }: IHeader) => {
             </View>
             <View style={stylesNavigation.title}>
                 <Text
-                    text={title || ""}
+                    text={title ?? ""}
                     type="h3"
                     color={
                         route.name === "CreditCards" ? Colors.blueDark : Colors.secondary
                     }
+                />
+            </View>
+            <View style={{ width: "20%" }}>
+                <Button
+                    type="icon"
+                    icon="wallet"
+                    handleClick={() => handleLoadingCreditCards()}
+                    disabled={configContext?.loading}
                 />
             </View>
         </View>
