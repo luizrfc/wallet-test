@@ -2,18 +2,14 @@ import { View } from "react-native";
 import { Box, Button, Container, Input, Item, Loading, Text } from "../../components";
 import { NavigationProp, useNavigation } from "@react-navigation/native";
 import { RootStackParamList } from "../../navigation/navigationStackParams";
-import useRegisterCard from "./RegisterCardHook";
+import useRegisterCard from "./registerCardHook";
 import { Controller } from "react-hook-form";
 import { Fragment } from "react";
 
 const RegisterCardsForm = (): JSX.Element => {
     const navigation = useNavigation<NavigationProp<RootStackParamList>>();
 
-    const handleClick = () => {
-        navigation.navigate("Home");
-    };
-
-    const { control, isValid } = useRegisterCard();
+    const { control, isValid, onSubmit, handleSubmit } = useRegisterCard();
 
     return <Fragment>
         <Item type="input" mt={10}>
@@ -77,7 +73,7 @@ const RegisterCardsForm = (): JSX.Element => {
                 text="avançar"
                 type={isValid ? "secondary" : "disabled"}
                 disabled={!isValid}
-                handleClick={() => handleClick()}
+                handleClick={handleSubmit(onSubmit)}
             />
         </Item>
     </Fragment>

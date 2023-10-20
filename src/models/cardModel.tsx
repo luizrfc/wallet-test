@@ -1,4 +1,4 @@
-type CardType = "black" | "green";
+export type CardType = "black" | "green";
 
 export interface ICardModel {
   id?: string;

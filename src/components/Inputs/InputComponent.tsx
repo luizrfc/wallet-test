@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconsList } from '../Button/ButtonComponent';
+import { IconsList } from '../Button/buttonComponent';
 import { View } from 'react-native';
 import InputLabel from './InputLabel';
 import { stylesInput } from './inputsStyle';
@@ -21,7 +21,6 @@ interface InputsProps {
 }
 
 const Input = (props: InputsProps): JSX.Element => {
-    console.log('FIELD', props.helperText)
     return (
         <View style={stylesInput.grid}>
             <View>

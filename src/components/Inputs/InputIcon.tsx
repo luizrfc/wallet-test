@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Button, { IconsList } from '../Button/ButtonComponent';
+import Button, { IconsList } from '../Button/buttonComponent';
 import { stylesInput } from './inputsStyle';
 import { View } from 'react-native';
 

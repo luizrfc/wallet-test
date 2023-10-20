@@ -1,13 +1,15 @@
 import ImageSvg from './ImageSvg';
 import Text from './TextComponent';
-import Button from './Button/ButtonComponent';
+import Button from './Button/buttonComponent';
 import Input from './Inputs/InputComponent';
 
 import Loading from './Loading';
 
-import Box from './Containers/Box';
-import Container from './Containers/Container';
-import Item from './Containers/Item';
+import CreditCards from './CreditCards/creditCards';
+
+import Box from './Containers/box';
+import Container from './Containers/container';
+import Item from './Containers/item';
 
 export {
     ImageSvg,
@@ -17,5 +19,6 @@ export {
     Input,
     Container,
     Loading,
-    Item
+    Item,
+    CreditCards
 }
