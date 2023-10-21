@@ -5,6 +5,7 @@ import { Colors } from "../../styles/themeStyle";
 import Text from "../TextComponent";
 import Item from "../Containers/item";
 import { anonymizeNumberCard } from "../../utils/validate";
+import { getColorCard, getColorFontCard, getNameCard } from "./creditCardsHook";
 
 
 const CreditCards = ({
@@ -14,22 +15,6 @@ const CreditCards = ({
   kind = "black",
   id = "000"
 }: ICardModel): React.ReactNode => {
-  const getNameCard = (_kind: string) => {
-    if (_kind === "black") return "Black Card";
-    if (_kind === "green") return "Green Card";
-    return "Credit Card";
-  };
-
-  const getColorCard = (_kind: string) => {
-    if (_kind === "black") return Colors.black;
-    if (_kind === "green") return Colors.primary;
-    return Colors.primary;
-  };
-
-  const getColorFontCard = (_kind: string) => {
-    if (_kind === "black") return Colors.white;
-    return Colors.black;
-  };
 
   return (
     <View

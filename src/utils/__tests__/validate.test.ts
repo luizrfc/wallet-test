@@ -1,5 +1,5 @@
-import { mockCreditCard } from "../mocks/creditCard";
-import { anonymizeNumberCard, validateCreditCardCvv, validateCreditCardExpiration, validateCreditCardNumber } from "./validate";
+import { mockCreditCard } from "../../mocks/creditCard";
+import { anonymizeNumberCard, validateCreditCardCvv, validateCreditCardExpiration, validateCreditCardNumber } from "../validate";
 
 const mockCard = mockCreditCard;
 
