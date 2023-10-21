@@ -1,10 +1,9 @@
 import { ICardModel } from '../models/cardModel';
 
 export const mockCreditCard: ICardModel = {
-    id: "123",
-    cvv: "123",
-    name: "Customer",
-    expiry: "00/00",
-    number: "0000 0000 0000 0000",
-    kind: "black"
+    number: "5502 0919 4514 2207",
+    cvv: "576",
+    name: "John Doe",
+    expiry: "12/23",
+    kind: "green"
 }
