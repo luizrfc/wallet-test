@@ -2,6 +2,7 @@ import { View } from "react-native";
 import { Box, Button, Container, Text } from "../../components";
 import { NavigationProp, useNavigation } from "@react-navigation/native";
 import { RootStackParamList } from "../../navigation/navigationStackParams";
+import CreditCardsContent from "./CreditCardsContent";
 
 const CreditCardsScreen = (): JSX.Element => {
     const navigation = useNavigation<NavigationProp<RootStackParamList>>();
@@ -10,16 +11,7 @@ const CreditCardsScreen = (): JSX.Element => {
         navigation.navigate("Home");
     };
 
-    return <Container>
-        <Text text="Cartões" type="h1" weight="regular" />
-        <Box>
-            <Button
-                text="Home"
-                type="secondary"
-                handleClick={() => handleClick()}
-            />
-        </Box>
-    </Container>
+    return <CreditCardsContent />
 }
 
 export default CreditCardsScreen;

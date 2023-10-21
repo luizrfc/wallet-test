@@ -7,6 +7,13 @@
       "name": "John Doe",
       "expiry": "12/23",
       "kind": "green"
+    },
+    {
+      "name": "Luiz Ricardo",
+      "cvv": "123",
+      "expiry": "12/26",
+      "kind": "black",
+      "id": "Y7wXfyP"
     }
   ]
 }

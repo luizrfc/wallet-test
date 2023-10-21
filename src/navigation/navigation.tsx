@@ -37,7 +37,9 @@ function Navigation() {
                     <Screen
                         name="CreditCards"
                         component={CreditCardsScreen}
-                        options={{ headerShown: false }}
+                        options={{
+                            title: "Wallet Test"
+                        }}
                     />
                 </Navigator>
             </NavigationContainer>

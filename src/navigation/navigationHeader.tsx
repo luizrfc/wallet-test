@@ -56,12 +56,19 @@ const NavigationHeader = ({ route, title }: IHeader) => {
                 />
             </View>
             <View style={{ width: "20%" }}>
-                <Button
+                {route.name === "CreditCards" ? (<Button
                     type="icon"
-                    icon="wallet"
-                    handleClick={() => handleLoadingCreditCards()}
+                    icon="add"
+                    handleClick={() => navigation.navigate("RegisterCards")}
                     disabled={configContext?.loading}
                 />
+                ) : (
+                    <Button
+                        type="icon"
+                        icon="wallet"
+                        handleClick={() => handleLoadingCreditCards()}
+                        disabled={configContext?.loading}
+                    />)}
             </View>
         </View>
     );
