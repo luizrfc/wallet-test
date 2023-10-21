@@ -6,7 +6,7 @@ import { useContext } from 'react';
 import { ConfigContext } from '../../context/configContext';
 import { NavigationProp, useNavigation } from '@react-navigation/native';
 import { RootStackParamList } from '../../navigation/navigationStackParams';
-import { RegisterCardContext } from './registerCardContext';
+import { CreditCardContext } from '../../context/creditCardsContext';
 
 interface IFormRegisterCard {
     number_card: string;
@@ -43,7 +43,7 @@ const useRegisterCard = (): IRegisterCard => {
     });
     const navigation = useNavigation<NavigationProp<RootStackParamList>>();
     const configContext = useContext(ConfigContext);
-    const creditCardContext = useContext(RegisterCardContext);
+    const creditCardContext = useContext(CreditCardContext);
 
     const onSubmit = async (data: FieldValues) => {
         const new_data: ICardModel = {
@@ -55,10 +55,8 @@ const useRegisterCard = (): IRegisterCard => {
         };
 
         const result = await addCard(new_data);
-        console.log("🚀 ~ file: RegisterCardHook.tsx:58 ~ onSubmit ~ result:", result)
         if (result.success) {
-            creditCardContext?.setNewCard(result.data);
-            creditCardContext?.setSuccess(true);
+            creditCardContext?.registerNewCard(result.data);
         }
     };
 
@@ -67,6 +65,7 @@ const useRegisterCard = (): IRegisterCard => {
         setTimeout(() => {
             navigation.navigate("CreditCards");
             configContext?.toggleLoading(false);
+            creditCardContext?.setSuccess(false);
         }, 2000);
     };
 

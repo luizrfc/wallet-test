@@ -5,11 +5,11 @@ import { Button, CreditCards, Text, Item } from "../../components";
 import { styleScreen } from "../../styles/themeStyle";
 
 import useRegisterCard from "./registerCardHook";
-import { RegisterCardContext } from "./registerCardContext";
+import { CreditCardContext } from "../../context/creditCardsContext";
 
 function RegisterCardsSuccess() {
   const { finishScreen } = useRegisterCard();
-  const context = useContext(RegisterCardContext);
+  const context = useContext(CreditCardContext);
 
   return (
     <Fragment>

@@ -21,6 +21,7 @@ interface ICreditCardsHooks {
   data: Array<ICards>;
   cardSelected: number;
   selectCard: (value: number) => void;
+  startScreen: () => void;
   animatedCardOne: any;
   animatedCardTwo: any;
 }
@@ -105,17 +106,18 @@ const useCreditCards = (): ICreditCardsHooks => {
     }
   };
 
-  useEffect(() => {
+  const startScreen = () => {
     setCardSelected(1);
     getCreditCards();
-  }, []);
+  };
 
   return {
     data,
     cardSelected,
     animatedCardOne,
     animatedCardTwo,
-    selectCard
+    selectCard,
+    startScreen
   }
 };
 

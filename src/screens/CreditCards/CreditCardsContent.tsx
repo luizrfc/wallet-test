@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useContext } from "react";
 
 import { Button, Container, CreditCards, Text } from "../../components";
 
@@ -6,9 +6,11 @@ import { TouchableOpacity, View } from "react-native";
 import Animated, { FadeIn, FadeInUp } from "react-native-reanimated";
 import { Colors, styleScreen } from "../../styles/themeStyle";
 import useCreditCards from "./CreditCardsHook";
+import { CreditCardContext } from "../../context/creditCardsContext";
 
 function CreditCardsContent() {
-    const { cardSelected, data, animatedCardOne, animatedCardTwo, selectCard } = useCreditCards();
+    const { cardSelected, animatedCardOne, animatedCardTwo, selectCard } = useCreditCards();
+    const creditCardContext = useContext(CreditCardContext);
 
     return (
         <Container ph={0}>
@@ -32,7 +34,7 @@ function CreditCardsContent() {
                         { paddingVertical: 16, paddingHorizontal: 32 }
                     ]}
                 >
-                    {data.map((card) => (
+                    {creditCardContext?.data.map((card) => (
                         <Animated.View
                             style={[
                                 { width: "100%", position: "absolute" },

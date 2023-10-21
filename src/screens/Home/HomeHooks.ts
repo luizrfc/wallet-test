@@ -9,13 +9,16 @@ import { NavigationProp, useNavigation } from "@react-navigation/native";
 import { RootStackParamList } from '../../navigation/navigationStackParams';
 
 import { ConfigContext } from "../../context/configContext";
+import { CreditCardContext } from "../../context/creditCardsContext";
 
 const useHome = (): IHome => {
-    const navigation = useNavigation<NavigationProp<RootStackParamList>>();
+    const navigation = useNavigation < NavigationProp < RootStackParamList >> ();
     const configContext = useContext(ConfigContext);
+    const creditCardContext = useContext(CreditCardContext);
 
-    const handleLoadingCreditCards = () => {
+    const handleLoadingCreditCards = async () => {
         configContext?.toggleLoading(true);
+        await creditCardContext?.getCreditCards()
 
         setTimeout(() => {
             navigation.navigate("CreditCards");

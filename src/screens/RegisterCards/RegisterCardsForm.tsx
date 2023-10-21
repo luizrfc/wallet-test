@@ -1,13 +1,10 @@
 import { View } from "react-native";
-import { Box, Button, Container, Input, Item, Loading, Text } from "../../components";
-import { NavigationProp, useNavigation } from "@react-navigation/native";
-import { RootStackParamList } from "../../navigation/navigationStackParams";
+import { Button, Input, Item } from "../../components";
 import useRegisterCard from "./registerCardHook";
 import { Controller } from "react-hook-form";
 import { Fragment } from "react";
 
 const RegisterCardsForm = (): JSX.Element => {
-    const navigation = useNavigation<NavigationProp<RootStackParamList>>();
 
     const { control, isValid, onSubmit, handleSubmit } = useRegisterCard();
 

@@ -2,13 +2,13 @@ import { Container, Loading, Text } from "../../components";
 import RegisterCardsForm from "./RegisterCardsForm";
 import Animated, { FadeInDown } from "react-native-reanimated";
 import { styleScreen } from "../../styles/themeStyle";
-import { RegisterCardContext, RegisterCardProvider } from "./registerCardContext";
+import { CreditCardContext } from "../../context/creditCardsContext";
 import { Fragment, useContext } from "react";
 import RegisterCardsSuccess from "./RegisterCardsSuccess";
 import { ConfigContext } from "../../context/configContext";
 
 const RegisterCardsContent = (): JSX.Element => {
-    const creditCardContext = useContext(RegisterCardContext);
+    const creditCardContext = useContext(CreditCardContext);
     const configContext = useContext(ConfigContext);
 
     return (
