@@ -16,32 +16,36 @@ type ImagesList =
   | "back-up"
   | "back-down";
 
-interface IImages {
+interface ImagesProps {
   image: ImagesList;
   width?: number;
   height?: number;
   color?: string;
+  testID?: string;
 }
 
 const ImageSvg = ({
   image,
   width = 24,
   height = 24,
-  color
-}: IImages): React.ReactNode => {
+  color,
+  testID,
+}: ImagesProps): JSX.Element => {
   switch (image) {
     case "add":
-      return <LocalSvg asset={SvgIconAdd} width={width} height={height} fill={color} />;
+      return <LocalSvg testID={testID ?? 'icon-test-id'} asset={SvgIconAdd} width={width} height={height} fill={color} />;
     case "back":
-      return <LocalSvg asset={SvgIconBack} width={width} height={height} fill={color} />;
+      return <LocalSvg testID={testID ?? 'icon-test-id'} asset={SvgIconBack} width={width} height={height} fill={color} />;
     case "camera":
-      return <LocalSvg asset={SvgIconCamera} width={width} height={height} fill={color} />;
+      return <LocalSvg testID={testID ?? 'icon-test-id'} asset={SvgIconCamera} width={width} height={height} fill={color} />;
     case "back-up":
-      return <LocalSvg asset={SvgBackUp} width={width} height={height} fill={color} />;
+      return <LocalSvg testID={testID ?? 'icon-test-id'} asset={SvgBackUp} width={width} height={height} fill={color} />;
     case "back-down":
-      return <LocalSvg asset={SvgBackDown} width={width} height={height} fill={color} />;
+      return <LocalSvg testID={testID ?? 'icon-test-id'} asset={SvgBackDown} width={width} height={height} fill={color} />;
     case "wallet":
-      return <LocalSvg asset={SvgIconWallet} width={width} height={height} />;
+      return <LocalSvg testID={testID ?? 'icon-test-id'} asset={SvgIconWallet} width={width} height={height} />;
+    default:
+      return <></>;
   }
 };
 

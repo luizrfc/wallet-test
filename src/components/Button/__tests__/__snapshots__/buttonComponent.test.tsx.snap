@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render button correctly 1`] = `
+exports[`Button render Button component correctly 1`] = `
 <View
   accessibilityState={
     {
@@ -58,8 +58,9 @@ exports[`Render button correctly 1`] = `
         },
       ]
     }
+    testID="text-btn-id"
   >
-    test
+    Botão
   </Text>
 </View>
 `;

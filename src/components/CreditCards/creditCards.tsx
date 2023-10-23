@@ -1,7 +1,6 @@
 import React from "react";
 import { View } from "react-native";
 import { ICardModel } from "../../models/cardModel";
-import { Colors } from "../../styles/themeStyle";
 import Text from "../TextComponent";
 import Item from "../Containers/item";
 import { anonymizeNumberCard } from "../../utils/validate";
@@ -12,8 +11,7 @@ const CreditCards = ({
   name = "Customer",
   number = "0000 0000 0000 0000",
   expiry = "00/00",
-  kind = "black",
-  id = "000"
+  kind = "black"
 }: ICardModel): React.ReactNode => {
 
   return (

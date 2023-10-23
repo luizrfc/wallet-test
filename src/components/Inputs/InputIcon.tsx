@@ -1,8 +1,8 @@
 import React from 'react';
+import { View } from 'react-native';
 
 import Button, { IconsList } from '../Button/buttonComponent';
 import { stylesInput } from './inputsStyle';
-import { View } from 'react-native';
 
 interface InputIconProps {
     icon?: IconsList;

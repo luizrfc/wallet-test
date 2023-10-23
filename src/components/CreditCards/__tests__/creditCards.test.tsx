@@ -4,19 +4,22 @@ import renderer from "react-test-renderer";
 import CreditCards from "../creditCards";
 import { mockCreditCard } from "../../../mocks/creditCard";
 
-const mockCard = mockCreditCard;
-
 test("Render a credit card correctly", () => {
-  const button = renderer
+  const data = {
+    name: "Customer",
+    number: "0000 0000 0000 1234",
+    expiry: "00/00",
+    kind: "black"
+  }
+  const component = renderer
     .create(
       <CreditCards
-        name={mockCard.name}
-        number={mockCard.number}
-        expiry={mockCard.expiry}
-        id={mockCard.id}
-        kind={mockCard.kind}
+        name={data.name}
+        number={data.number}
+        expiry={data.expiry}
+        kind="black"
       />
     )
     .toJSON();
-  expect(button).toMatchSnapshot();
+  expect(component).toMatchSnapshot();
 });

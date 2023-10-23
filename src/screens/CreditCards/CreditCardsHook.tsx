@@ -1,4 +1,4 @@
-import React, { ReactElement, createContext, useEffect, useState } from "react";
+import { ReactElement, useState } from "react";
 import { Dimensions } from "react-native";
 import {
   Extrapolate,

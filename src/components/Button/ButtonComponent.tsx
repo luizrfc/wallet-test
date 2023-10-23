@@ -5,7 +5,7 @@ import { stylesBase, stylesButton } from "./buttonStyle";
 import useButton from "./buttonHooks";
 
 export type IconsList = "add" | "back" | "wallet" | "camera";
-type TypesList = "primary" | "secondary" | "disabled" | "icon" | "rounded";
+export type TypesList = "primary" | "secondary" | "disabled" | "icon" | "rounded";
 
 interface IButtons {
   text?: string;
@@ -34,10 +34,10 @@ const Button = ({
       disabled={disabled}
     >
       {icon && (
-        <ImageSvg image={icon} color={fontColor(disabled, type)} />
+        <ImageSvg testID="icon-btn-id" image={icon} color={fontColor(disabled, type)} />
       )}
       {text && (
-        <Text text={text} color={fontColor(disabled, type)} />
+        <Text testID="text-btn-id" text={text} color={fontColor(disabled, type)} />
       )}
     </TouchableOpacity>
   );

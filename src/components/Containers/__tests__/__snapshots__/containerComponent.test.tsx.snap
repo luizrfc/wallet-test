@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render a container component correctly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#142995",
+      "flex": 1,
+      "justifyContent": "center",
+      "padding": 16,
+    }
+  }
+/>
+`;

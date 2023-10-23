@@ -1,6 +1,5 @@
 import React from 'react';
-import MaskInput, { Mask, MaskInputProps } from 'react-native-mask-input';
-import { TextInput } from 'react-native';
+import MaskInput, { MaskInputProps } from 'react-native-mask-input';
 
 import { Colors } from '../../styles/themeStyle';
 import useInput from './inputHook';

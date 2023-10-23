@@ -4,7 +4,7 @@ exports[`Render a credit card correctly 1`] = `
 <View
   style={
     {
-      "backgroundColor": "#A5FF32",
+      "backgroundColor": "#000",
       "borderRadius": 16,
       "marginVertical": 20,
       "paddingHorizontal": 16,
@@ -17,7 +17,7 @@ exports[`Render a credit card correctly 1`] = `
     style={
       [
         {
-          "color": "#000",
+          "color": "#FFF",
           "fontFamily": "PTSans-CaptionRegular",
         },
         {
@@ -26,8 +26,9 @@ exports[`Render a credit card correctly 1`] = `
         },
       ]
     }
+    testID="text-id"
   >
-    Green Card
+    Black Card
   </Text>
   <View
     style={
@@ -57,7 +58,7 @@ exports[`Render a credit card correctly 1`] = `
       style={
         [
           {
-            "color": "#000",
+            "color": "#FFF",
             "fontFamily": "PTSans-CaptionRegular",
           },
           {
@@ -66,8 +67,9 @@ exports[`Render a credit card correctly 1`] = `
           },
         ]
       }
+      testID="text-id"
     >
-      John Doe
+      Customer
     </Text>
   </View>
   <View
@@ -98,7 +100,7 @@ exports[`Render a credit card correctly 1`] = `
       style={
         [
           {
-            "color": "#000",
+            "color": "#FFF",
             "fontFamily": "PTSans-CaptionRegular",
           },
           {
@@ -107,8 +109,9 @@ exports[`Render a credit card correctly 1`] = `
           },
         ]
       }
+      testID="text-id"
     >
-      •••• •••• •••• 2207
+      •••• •••• •••• 1234
     </Text>
   </View>
   <View
@@ -139,7 +142,7 @@ exports[`Render a credit card correctly 1`] = `
       style={
         [
           {
-            "color": "#000",
+            "color": "#FFF",
             "fontFamily": "PTSans-CaptionRegular",
           },
           {
@@ -148,163 +151,9 @@ exports[`Render a credit card correctly 1`] = `
           },
         ]
       }
+      testID="text-id"
     >
-      Validade 12/23
-    </Text>
-  </View>
-</View>
-`;
-
-exports[`Render button correctly 1`] = `
-<View
-  style={
-    {
-      "backgroundColor": "#A5FF32",
-      "borderRadius": 16,
-      "marginVertical": 20,
-      "paddingHorizontal": 16,
-      "paddingVertical": 30,
-      "width": "100%",
-    }
-  }
->
-  <Text
-    style={
-      [
-        {
-          "color": "#000",
-          "fontFamily": "PTSans-CaptionRegular",
-        },
-        {
-          "fontSize": 18,
-          "lineHeight": 20,
-        },
-      ]
-    }
-  >
-    Green Card
-  </Text>
-  <View
-    style={
-      [
-        {
-          "width": "100%",
-        },
-        {
-          "paddingBottom": 0,
-          "paddingLeft": 0,
-          "paddingRight": 0,
-          "paddingTop": 0,
-        },
-        {
-          "marginBottom": 6,
-          "marginLeft": 0,
-          "marginRight": 0,
-          "marginTop": 34,
-        },
-        {
-          "alignItems": "flex-start",
-        },
-      ]
-    }
-  >
-    <Text
-      style={
-        [
-          {
-            "color": "#000",
-            "fontFamily": "PTSans-CaptionRegular",
-          },
-          {
-            "fontSize": 16,
-            "lineHeight": 18,
-          },
-        ]
-      }
-    >
-      John Doe
-    </Text>
-  </View>
-  <View
-    style={
-      [
-        {
-          "width": "100%",
-        },
-        {
-          "paddingBottom": 0,
-          "paddingLeft": 0,
-          "paddingRight": 0,
-          "paddingTop": 0,
-        },
-        {
-          "marginBottom": 6,
-          "marginLeft": 0,
-          "marginRight": 0,
-          "marginTop": 4,
-        },
-        {
-          "alignItems": "flex-start",
-        },
-      ]
-    }
-  >
-    <Text
-      style={
-        [
-          {
-            "color": "#000",
-            "fontFamily": "PTSans-CaptionRegular",
-          },
-          {
-            "fontSize": 14,
-            "lineHeight": 16,
-          },
-        ]
-      }
-    >
-      •••• •••• •••• 2207
-    </Text>
-  </View>
-  <View
-    style={
-      [
-        {
-          "width": "100%",
-        },
-        {
-          "paddingBottom": 0,
-          "paddingLeft": 0,
-          "paddingRight": 0,
-          "paddingTop": 0,
-        },
-        {
-          "marginBottom": 6,
-          "marginLeft": 0,
-          "marginRight": 0,
-          "marginTop": 4,
-        },
-        {
-          "alignItems": "flex-start",
-        },
-      ]
-    }
-  >
-    <Text
-      style={
-        [
-          {
-            "color": "#000",
-            "fontFamily": "PTSans-CaptionRegular",
-          },
-          {
-            "fontSize": 14,
-            "lineHeight": 16,
-          },
-        ]
-      }
-    >
-      Validade 12/23
+      Validade 00/00
     </Text>
   </View>
 </View>

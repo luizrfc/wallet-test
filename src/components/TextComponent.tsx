@@ -11,16 +11,18 @@ interface IFonts {
   type?: TypesList;
   weight?: WeightsList;
   color?: string;
+  testID?: string;
 }
 
 const Text = ({
   text,
   type = "small",
   color = Colors.white,
-  weight = "regular"
+  weight = "regular",
+  testID = 'text-id'
 }: IFonts): React.ReactNode => {
   return (
-    <TextBase style={[stylesBase(color)[weight], stylesFont[type]]}>{text}</TextBase>
+    <TextBase testID={testID} style={[stylesBase(color)[weight], stylesFont[type]]}>{text}</TextBase>
   );
 };
 

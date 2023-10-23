@@ -6,11 +6,12 @@ import { Colors } from '../../styles/themeStyle';
 
 interface InputLabelProps {
     message?: string;
+    testID?: string;
 }
 
 const InputHelperText = (props: InputLabelProps): JSX.Element => {
     return <View style={stylesInput.helperText}>
-        <Text text={props.message ?? ''} type="small" color={Colors.error} />
+        <Text text={props.message ?? ''} type="small" color={Colors.error} testID={props.testID ?? 'helper-test-id'} />
     </View>
 }
 

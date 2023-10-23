@@ -22,6 +22,7 @@ interface IConfigContextType {
   animatedTopStyle: IAnimatedTop;
   animatedBottomStyle: IAnimatedBottom;
   toggleLoading: (value: boolean) => void;
+  setLoading: (value: boolean) => void;
 }
 
 interface IConfigProps {
@@ -82,6 +83,7 @@ const ConfigProvider = ({ children }: IConfigProps) => {
     <ConfigContext.Provider
       value={{
         loading,
+        setLoading,
         animatedTopStyle,
         animatedBottomStyle,
         toggleLoading

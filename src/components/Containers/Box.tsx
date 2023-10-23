@@ -6,7 +6,7 @@ interface IBox {
     width?: DimensionValue;
     pdHorizontal?: number;
     pdVertical?: number;
-    children?: React.ReactNode;
+    children: React.ReactNode;
 }
 
 const Box = ({

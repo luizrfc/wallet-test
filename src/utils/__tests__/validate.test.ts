@@ -36,7 +36,7 @@ describe("Validate credit card expiration", () => {
 
 describe("Validate credit card CVV", () => {
     test("Credit card CVV valid", () => {
-        expect(validateCreditCardCvv(mockCard.cvv)).toBe(true);
+        expect(validateCreditCardCvv("576")).toBe(true);
     });
     test("A invalid credit card CVV", () => {
         expect(validateCreditCardCvv("")).toBe(false);
@@ -49,7 +49,7 @@ describe("Validate credit card CVV", () => {
 describe("Anonymize card number result", () => {
     // Number card
     test("Anonymize a correct card number", () => {
-        expect(anonymizeNumberCard(mockCard.number)).toBe("•••• •••• •••• 2207");
+        expect(anonymizeNumberCard("5502 0919 4514 2207")).toEqual("•••• •••• •••• 2207");
     });
     test("Invalid card number return default value", () => {
         expect(anonymizeNumberCard("")).toBe("•••• •••• •••• ••••");

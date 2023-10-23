@@ -23,7 +23,7 @@ interface IItem {
   width?: DimensionValue;
   type?: TypesList;
   align?: AlignList;
-  children?: React.ReactElement<any>;
+  children: React.ReactElement<any>;
 }
 
 const Item = ({

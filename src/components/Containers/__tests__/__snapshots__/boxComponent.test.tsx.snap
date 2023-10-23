@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render box component correctly 1`] = `
+<View
+  style={
+    {
+      "paddingHorizontal": 14,
+      "paddingVertical": 10,
+      "width": "100%",
+    }
+  }
+/>
+`;

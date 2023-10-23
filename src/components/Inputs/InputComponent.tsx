@@ -1,10 +1,11 @@
 import React from 'react';
-import { IconsList } from '../Button/buttonComponent';
 import { View } from 'react-native';
+import { ControllerRenderProps, FieldError } from 'react-hook-form';
+
+import { IconsList } from '../Button/buttonComponent';
 import InputLabel from './InputLabel';
 import { stylesInput } from './inputsStyle';
 import InputIcon from './InputIcon';
-import { ControllerRenderProps, FieldError } from 'react-hook-form';
 import InputText from './InputText';
 import InputMask from './InputMask';
 import InputHelperText from './InputHelperText';
@@ -24,19 +25,19 @@ const Input = (props: InputsProps): JSX.Element => {
     return (
         <View style={stylesInput.grid}>
             <View>
-                {props.label && <InputLabel label={props.label} />}
+                {props.label && <InputLabel testID='label-test-id' label={props.label} />}
             </View>
             <View style={[stylesInput.default, props.helperText && stylesInput.error]}>
                 {props.icon && <InputIcon icon={props.icon} />}
                 <View style={{ width: props.icon ? "80%" : "100%" }}>
                     {!props.mask ?
-                        (<InputText
+                        (<InputText testID='input-test-id'
                             placeholder={props.placeholder}
                             maxLength={props.maxLength}
                             value={props.field.value}
                             onChangeText={props.field.onChange}
                             onBlur={props.field.onBlur}
-                        />) : (<InputMask
+                        />) : (<InputMask testID='input-test-id'
                             maskName={props.mask}
                             placeholder={props.placeholder}
                             maxLength={props.maxLength}
@@ -47,7 +48,7 @@ const Input = (props: InputsProps): JSX.Element => {
                     }
                 </View>
             </View>
-            {props.helperText && <InputHelperText message={props.helperText.message} />}
+            {props.helperText && <InputHelperText testID="helper-test-id" message={props.helperText.message} />}
         </View>
     )
 }

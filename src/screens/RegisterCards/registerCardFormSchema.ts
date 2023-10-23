@@ -2,7 +2,7 @@ import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { validateCreditCardCvv, validateCreditCardExpiration, validateCreditCardNumber } from '../../utils/validate';
 
-const schema = yup.object({
+export const schema = yup.object({
     number_card: yup.string()
         .required("Insira um cartão")
         .test('validate-card', 'Insira um cartão válido', (value) => validateCreditCardNumber(value)),

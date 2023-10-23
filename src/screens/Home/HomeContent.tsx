@@ -9,7 +9,7 @@ import { View } from 'react-native';
 import { styleScreen } from '../../styles/themeStyle';
 import Animated, { FadeIn, FadeInDown } from 'react-native-reanimated';
 
-const HomeScreen = (): JSX.Element => {
+const HomeComponent = (): JSX.Element => {
     const { handleLoadingCreditCards, handleBtnRegister } = useHome();
     const configContext = useContext(ConfigContext);
 
@@ -44,4 +44,4 @@ const HomeScreen = (): JSX.Element => {
     )
 }
 
-export default HomeScreen;
+export default HomeComponent;

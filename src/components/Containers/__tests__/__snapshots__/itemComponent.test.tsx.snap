@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render item container component correctly 1`] = `
+<View
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      {
+        "paddingBottom": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+      },
+      {
+        "marginBottom": 6,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 10,
+      },
+      {
+        "alignItems": "center",
+      },
+    ]
+  }
+/>
+`;

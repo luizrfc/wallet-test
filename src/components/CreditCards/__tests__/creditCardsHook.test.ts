@@ -23,3 +23,12 @@ describe("Return a name of the card", () => {
         expect(getNameCard("white")).toBe("Credit Card");
     })
 })
+
+describe("Return a color for the name of card", () => {
+    it("should return a black font for dark card color", () => {
+        expect(getColorFontCard("black")).toBe("#FFF");
+    })
+    it("should return a black font for light card color", () => {
+        expect(getColorFontCard("green")).toBe("#000");
+    })
+})

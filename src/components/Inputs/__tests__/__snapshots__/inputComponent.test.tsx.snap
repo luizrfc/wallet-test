@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component render Input component correctly 1`] = `
+<View
+  style={
+    {
+      "paddingHorizontal": 2,
+      "paddingVertical": 2,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        {
+          "marginBottom": 8,
+        }
+      }
+      testID="label-test-id"
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#BBB",
+              "fontFamily": "PTSans-CaptionRegular",
+            },
+            {
+              "fontSize": 14,
+              "lineHeight": 16,
+            },
+          ]
+        }
+        testID="text-id"
+      >
+        Name
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#FFF",
+          "borderColor": "#FFF",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "elevation": 2,
+          "flexDirection": "row",
+          "paddingHorizontal": 8,
+          "paddingVertical": 2,
+          "shadowColor": "#000",
+          "shadowRadius": 2,
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        {
+          "width": "100%",
+        }
+      }
+    >
+      <TextInput
+        onBlur={
+          [MockFunction] {
+            "calls": [
+              [],
+            ],
+            "results": [
+              {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          }
+        }
+        onChangeText={
+          [MockFunction] {
+            "calls": [
+              [
+                "John",
+              ],
+              [
+                "John",
+              ],
+            ],
+            "results": [
+              {
+                "type": "return",
+                "value": undefined,
+              },
+              {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          }
+        }
+        placeholder="Enter your name"
+        placeholderTextColor="#BBB"
+        testID="input-test-id"
+        value=""
+      />
+    </View>
+  </View>
+</View>
+`;
