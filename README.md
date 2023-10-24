@@ -21,28 +21,47 @@ O projeto **Wallet Test** foi desenvolvido em React Native com TypeScript, utili
 ## 2: Estrutura do projeto
 
 - **android & ios**: Arquivos nativos gerados automaticamente pelo React Native
+
 - **assets**: Armazena principalmente as fontes e imagens utilizadas no projeto, esta pasta é compartilhada entre as SO
+
 - **src - Source**: Pasta principal do projeto onde ficam todos os arquivos - exceto os de configuração
-**./assets**: Geralmente utilizado para arquivos estátivos utilzados pelo projeto como fonte, imagens e arquivos de mídia
-**./components**:Armazena os componentes reutilizáveis que são usados em várias partes do projeto como botões, textos, inputs, loading...
-**./context**: Gerencia os contextos globais para compartilhar os dados entre os componentes
-**./mocks**: Diretório para arquivos de simulação de dados auxiliando no desenvolvimento ou em testes
-**./models**: Contem os modelos de dados e/ou tipos personalizados
-**./navigation**: Configuração da navegação do projeto
-**./screens**: Telas/Containers - Responsável por agrupar os componentes gerando as diferentes telas do projeto
-**./services**: Este diretório é responsável pela lógica de negórios ou serviços que fazem chamadas à API, gerenciamento de autenticação, etc
-**./styles**: Armazena os arquivos de estilos globais, como temas ou estilos compartilhados;
-**./utils**: Utilitários ou funções auxiliares que são usados em várias partes do aplicativo;
-**./App.tsx**: Ponto de entrada principal do aplicativo, onde geralmente se configura a navegação, define telas iniciais, e faz outras chamadas iniciais necessárias para o funcionamento do aplicativo.
+
+**src/assets**: Geralmente utilizado para arquivos estátivos utilzados pelo projeto como fonte, imagens e arquivos de mídia
+
+**src/components**:Armazena os componentes reutilizáveis que são usados em várias partes do projeto como botões, textos, inputs, loading...
+
+**src/context**: Gerencia os contextos globais para compartilhar os dados entre os componentes
+
+**src/mocks**: Diretório para arquivos de simulação de dados auxiliando no desenvolvimento ou em testes
+
+**src/models**: Contem os modelos de dados e/ou tipos personalizados
+
+**src/navigation**: Configuração da navegação do projeto
+
+**src/screens**: Telas/Containers - Responsável por agrupar os componentes gerando as diferentes telas do projeto
+
+**src/services**: Este diretório é responsável pela lógica de negórios ou serviços que fazem chamadas à API, gerenciamento de autenticação, etc
+
+**src/styles**: Armazena os arquivos de estilos globais, como temas ou estilos compartilhados
+
+**src/utils**: Utilitários ou funções auxiliares que são usados em várias partes do aplicativo
+
+**src/App.tsx**: Ponto de entrada principal do aplicativo, onde geralmente se configura a navegação, define telas iniciais, e faz outras chamadas iniciais necessárias para o funcionamento do aplicativo.
 
 ## 3: Um pouco mais do projeto
 
 Ajustei algumas configurações no [Package.JSON](./package.json) para facilitar rodar alguns scripts:
+
 *server:local* - Para iniciar o JSON-SERVER apontando para meu IP pois estava em conflito com localhost
+
 *server* - Para rodar o JSON-SERVER sem qualquer alteração
+
 *coverage* - Utilizo para atualizar as informações sobre a cobertura de testes do código
+
 *android* - Script para rodar o projeto em Android
+
 *ios* - Script para rodar o projeto em iOS
+
 *start* - Script para rodar o Metro
 
 O projeto já foi buildado e gerado um APK que está disponível [AQUI](./android/app/release/app-release.apk) para download.
