@@ -26,9 +26,9 @@ O projeto **Wallet Test** foi desenvolvido em React Native com TypeScript, utili
 
 - **src - Source**: Pasta principal do projeto onde ficam todos os arquivos - exceto os de configuração
 
-**src/assets**: Geralmente utilizado para arquivos estátivos utilzados pelo projeto como fonte, imagens e arquivos de mídia
+**src/assets**: Utilizado para arquivos estáticos utilzados pelo projeto como fonte, imagens e arquivos de mídia
 
-**src/components**:Armazena os componentes reutilizáveis que são usados em várias partes do projeto como botões, textos, inputs, loading...
+**src/components**: Armazena os componentes reutilizáveis que são usados em várias partes do projeto como botões, textos, inputs, loading...
 
 **src/context**: Gerencia os contextos globais para compartilhar os dados entre os componentes
 
@@ -40,7 +40,7 @@ O projeto **Wallet Test** foi desenvolvido em React Native com TypeScript, utili
 
 **src/screens**: Telas/Containers - Responsável por agrupar os componentes gerando as diferentes telas do projeto
 
-**src/services**: Este diretório é responsável pela lógica de negórios ou serviços que fazem chamadas à API, gerenciamento de autenticação, etc
+**src/services**: Este diretório é responsável pela lógica de negócios ou serviços que fazem chamadas à API, gerenciamento de autenticação, etc
 
 **src/styles**: Armazena os arquivos de estilos globais, como temas ou estilos compartilhados
 
@@ -57,6 +57,8 @@ Ajustei algumas configurações no [Package.JSON](./package.json) para facilitar
 *server* - Para rodar o JSON-SERVER sem qualquer alteração
 
 *coverage* - Utilizo para atualizar as informações sobre a cobertura de testes do código
+
+Scripts padrão:
 
 *android* - Script para rodar o projeto em Android
 
