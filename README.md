@@ -14,8 +14,8 @@ O projeto **Wallet Test** foi desenvolvido em React Native com TypeScript, utili
 - [Mask Input](https://www.npmjs.com/package/react-native-mask-input) Utilizado para campos que necessitam de máscara
 - [Hook Form](https://react-hook-form.com/) Controle dos inputs e validação dos dados
 - [Yup](https://github.com/jquense/yup) Schema para validação dos dados em conjunto com o Hook Form
-- [Reanimated](https://docs.swmansion.com/react-native-reanimated/) Lib para gereciamento das animações do projeto
-- [SVG](https://www.npmjs.com/package/react-native-svg) Lib para carregar SVG/Imagens
+- [Reanimated](https://docs.swmansion.com/react-native-reanimated/) Gereciamento das animações do projeto
+- [SVG](https://www.npmjs.com/package/react-native-svg) Carregamento do SVG/Imagens
 - [Jest](https://jestjs.io/) Framework para testes Javascript/Typescript
 
 ## 2: Estrutura do projeto
