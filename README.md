@@ -1,6 +1,6 @@
 # Wallet Test
 
->**Nota**: _Este é um projeto criado exclusivamente para teste de uma vaga em desenvolvimento mobile._
+>Este é um projeto criado exclusivamente para teste de uma vaga em desenvolvimento mobile baseado em um layout em figma e contempla a construção de 3 telas: Home, Cadastro de Cartões e Apresentação dos Cartões.
 
 ## 1: Sobre o projeto
 
@@ -50,4 +50,6 @@ O projeto já foi buildado e gerado um APK que está disponível [AQUI](./androi
 ## Obrigado! :tada:
 
 Novamente, agradeço a oportunidade e espero que o teste esteja de acordo com a proposta da vaga.
+
 Luiz Ricardo. :partying_face:
+[LinkedIn](https://www.linkedin.com/in/luizricardofc)
