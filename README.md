@@ -66,7 +66,7 @@ Scripts padrão:
 
 *start* - Script para rodar o Metro
 
-O projeto já foi buildado e gerado um APK que está disponível [AQUI](./android/app/release/app-release.apk) para download.
+Já foi feito o processo de build e gerado um APK que está disponível [AQUI](./android/app/release/app-release.apk) para download.
 
 ## Obrigado! :tada:
 
